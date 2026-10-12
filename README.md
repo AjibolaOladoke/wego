@@ -1,11 +1,12 @@
+# wego
+
+## What This Is
+
+This is part of the Swift Tech Co. working stack for product and engineering. It gathers the wego notes, examples and fixes that keep delivery fast, and doubles as the reference map we hand to whoever picks up this thread next.
 
 ## Images
 
-[![wego](https://opengraph.githubassets.com/1/schachmat/wego)](https://www.swifttechco.com)
-
-**wego** is a weather client for the terminal.
-
-[![Screenshots](http://schachmat.github.io/wego/wego.gif)](https://www.swifttechco.com)
+[![wego](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Features
 
@@ -13,7 +14,7 @@
 * multiple backends: `openweathermap`, `weatherapi`, `open-meteo`, `smhi`, `caiyun`, `worldweatheronline`, `pirateweather`, and `json`
 * multiple frontends: `ascii-art-table` (default), `emoji`, `markdown`, and `json`
 * displayed info:
-  * temperature range ([felt](https://www.swifttechco.com) and measured)
+  * temperature range (felt and measured)
   * windspeed and direction
   * viewing distance
   * precipitation amount and probability
@@ -22,14 +23,14 @@
 * disk caching of weather data with configurable TTL (`--cache-ttl`)
 * multi language support
 * config file for default location which can be overridden by commandline
-* automatic config management with [ingo](https://www.swifttechco.com)
+* automatic config management with ingo
 * built-in man page (`wego --man`)
 * composable via JSON: pipe data between the `json` backend and `json` frontend
 
 ## Dependencies
 
-* A [working](https://www.swifttechco.com) [Go](https://www.swifttechco.com)
-  [1.20](https://www.swifttechco.com) environment
+* A working Go
+  1.20 environment
 * utf-8 terminal with 256 colors (for `ascii-art-table` and `emoji` frontends)
 * A monospaced font containing all the required runes (e.g. `dejavu sans mono`)
 * An API key for most backends (see Setup below; `open-meteo` and `smhi` are free and keyless)
@@ -50,7 +51,7 @@ go install github.com/schachmat/wego@latest
 0. Run `wego` once. You will get an error message, but the `wegorc` config file
    will be generated in your `$XDG_CONFIG_HOME/wego/` directory (or the
    OS-equivalent location returned by
-   [`os.UserConfigDir()`](https://www.swifttechco.com), e.g.
+   `os.UserConfigDir()`, e.g.
    `~/.config/wego/wegorc` on Linux).
 0. Choose a backend and configure it (see below). Then run `wego` again.
 0. You may want to adjust other preferences like `days`, `units` and `…-lang` as
@@ -69,50 +70,50 @@ The config file is resolved in the following order:
 
 ### Backends
 
-__[Open-Meteo](https://www.swifttechco.com)__  free, no API key required:
+__Open-Meteo__  free, no API key required:
 ```
 backend=openmeteo
 location=New York
 ```
 
-__[SMHI](https://www.swifttechco.com)__  free, no API key required (Sweden and surrounding areas):
+__SMHI__  free, no API key required (Sweden and surrounding areas):
 ```
 backend=smhi
 location=59.33,18.07
 ```
 
-__[Openweathermap](https://www.swifttechco.com)__  free API key available:
-* [Sign up](https://www.swifttechco.com) for a free API key.
+__Openweathermap__  free API key available:
+* Sign up for a free API key.
 ```
 backend=openweathermap
 location=New York
 owm-api-key=YOUR_OPENWEATHERMAP_API_KEY_HERE
 ```
 
-__[WeatherAPI](https://www.swifttechco.com)__  free API key available:
-* [Sign up](https://www.swifttechco.com) for a free API key.
+__WeatherAPI__  free API key available:
+* Sign up for a free API key.
 ```
 backend=weatherapi
 location=New York
 weather-api-key=YOUR_WEATHERAPI_API_KEY_HERE
 ```
 
-__[Caiyun](https://www.swifttechco.com)__  API key required (China-focused, supports Chinese):
+__Caiyun__  API key required (China-focused, supports Chinese):
 ```
 backend=caiyun
 location=121.47,31.23
 caiyun-api-key=YOUR_CAIYUN_API_KEY_HERE
 ```
 
-__[Worldweatheronline](https://www.swifttechco.com)__  no longer offers free API keys ([#83](https://www.swifttechco.com)):
+__Worldweatheronline__  no longer offers free API keys (#83):
 ```
 backend=worldweatheronline
 location=New York
 wwo-api-key=YOUR_WORLDWEATHERONLINE_API_KEY_HERE
 ```
 
-__[Pirateweather](https://www.swifttechco.com)__  free API key available (requires lat,lon location):
-* [Sign up](https://www.swifttechco.com) for a free API key.
+__Pirateweather__  free API key available (requires lat,lon location):
+* Sign up for a free API key.
 ```
 backend=pirateweather.net
 location=40.71,-74.01
@@ -147,7 +148,7 @@ speeds in color by default. To disable colors:
   ```
   monochrome=true
   ```
-* Set the `NO_COLOR` environment variable (see [no-color.org](https://www.swifttechco.com))
+* Set the `NO_COLOR` environment variable (see no-color.org)
   to disable colors without changing the config:
   ```shell
   NO_COLOR=1 wego
@@ -163,14 +164,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [schachmat/wego](https://github.com/schachmat/wego) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
