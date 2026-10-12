@@ -6,7 +6,7 @@ This is part of the Swift Tech Co. working stack for product and engineering. It
 
 ## Images
 
-[![wego](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![wego](images/preview.png)](https://github.com/Swift-Tech-Co/wego)
 
 ## Features
 
@@ -39,7 +39,7 @@ This is part of the Swift Tech Co. working stack for product and engineering. It
 
 Check your distribution for packaging:
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/wego.svg)](https://www.swifttechco.com)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/wego.svg)](https://github.com/Swift-Tech-Co/wego)
 
 To directly install or update the wego binary from Github into your `$GOPATH` as usual, run:
 ```shell
@@ -168,13 +168,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/wego
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [schachmat/wego](https://github.com/schachmat/wego) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
